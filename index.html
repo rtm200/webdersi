@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tanimlar</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "poppins";
+    }
+    body{
+        background-color: hsl(0, 0%, 10%);
+        color: white;
+        padding: 0 2rem;
+    }
+    h1{
+        font-size: 3rem;
+        font-weight: 900;
+        text-align: center;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+    h2{
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    p{
+        font-size: 1rem;
+        color: white;
+    }
+
+    .splinter{
+        display: flex;
+        width: 100%;
+        height: 1px;
+        background-color: hsl(0, 0%, 45%);
+        margin: 10px 0;
+    }
+    .warn{
+        color: rgb(223, 50, 50);
+        font-weight: 800;
+        font-style: italic;
+        text-decoration: underline;
+    }
+    .end{
+        display: flex;
+        width: 100%;
+        height: 1px;
+        background-color: hsl(0, 0%, 45%);
+        margin: 30px 0 100px 0;
+    }
+</style>
+<body>
+    <h1>PDF 1</h1>
+    <h2>Internet nedir?</h2>
+    <p>- (International Network).</p>
+    <p>- İnternet, Dünyada bilgisayar ağlarını birbirine bağlayan elektronik iletişim ağıdır.</p>
+    <p>- Bilgisayarların İnternet kullanarak bilgi iletimi <span class="warn">bilgisayar ağları</span> üzerinden gerçekleşmektedir.</p>
+    <div class="splinter"></div>
+
+    <h2>WWW Nedir?</h2>
+    <p>- yazı,  resim, ses, film, vs. gibi verilere ulaşmayı sağlayan web sayfaları ağıdır.</p>
+    <p>- siteler www. ile başlar.</p>
+    <div class="splinter"></div>
+
+    <h2>(Server - Client) Nedir?</h2>
+    <p>- sunucu (server) bilgiyi yada siteyi kendisinde saklar ve istemci (client) o webiteyi kullanan şahıs ya taraftır</p>
+    <p>- sunucu bilgiyi verir. client bilgiyi isteyerek alır.</p>
+    <p>- sunucu bizim kodlarımızı, sitemizi ve bilgilerimizi saklar, client ise ağlararak bunları talep eder işte aq.</p>
+    <div class="splinter"></div>
+
+    <h2>sunucu çeşitleri</h2>
+    <p>Web Sunucuları: normal hosting</p>
+    <p>Dosya Paylaşım Sunucuları: ftp, içinde klasor dosya falan var sadece</p>
+    <p>Medya Sunucular: bunların kapasiteleri fazla içine film, dizi, oyun dosyaları saklıyorlar.</p>
+    <p>Veritabanı Sunucuları: burada da veritabanı var.</p>
+    <p>DNS (Alan Adı Sunucuları)</p>
+    <div class="splinter"></div>
+
+    <h2>Hosting (sunucu) Nedir?</h2>
+    <p>
+        website oluşturmak için kod, resim, font vs. hazırlıyoruz bunlar birlikte website olur ve
+        sabahtan akşama kadar kesintisiz çalışmaları gerekiyor.
+        sunucu ise dünyada biryerde bir bilgisayardır (ram, cpu, hafıza falan) biz bu bilgisayarları kiralayıp verilerimizi oraya yükleriz
+        o bilgisayarlar 24/7 açık ve online durumunda bizim websiteyi internete sunuyorlar.
+        işte o bilgisayarlar = server'dir
+    </p>
+    <div class="splinter"></div>
+
+    <h2>Domain (Alan Adı) Nedir?</h2>
+    <p>- bir web sitesinin İnternet'teki adı ve adresidir.</p>
+    <p>- her sunucunun bir ip addressi var alan adımız yoksa o ip ile sunucuyu bulabiliriz ama mal mal ip rakamını araştırmamak için alan adı kullanıyoruz</p>
+    <p>- alan adı: https://www.<span class="warn">Bianco</span>.com</p>
+    <p>- server ip: https://1.2.3.4</p>
+    <div class="splinter"></div>
+
+    <h2>PHP Nedir?</h2>
+    <p>- serverin içinde kalır ve kimse bu kodları göremez, html kodları ile aynı sayfada yazılırsa da eğer yine sunucu sadece html kodları sunar ve php kodları server içinde okunur ve serverden kullanıcıya (cliente) gönderilmez</p>
+    <p>- bu mal diliyle normalde database (veritabanı) ile konuşuyoruz. yani veri ekleme, çıkartma, silme, sunma yapıyoruz.</p>
+    <p>- php backend bir dil bu dil yoksa veritabanı ile çalışamıyoruz. (tabi diğer diller de var)</p>
+    <p>- php kodları html kodların götünde de yazabiliriz. soka soka beraber çalışır.</p>
+    <div class="splinter"></div>
+
+    <h2>Apache Nedir?</h2>
+    <p>- kısaca bize bir sever oluşturur. içinde client side, server side var.</p>
+    <p>- peki database nerede? o ayrı bir yerde onu da ayrı oluşturucaz.</p>
+    <div class="splinter"></div>
+
+    <h2>WAMP, XAMPP</h2>
+    <p>- bunlar uygulama, bunları indirip açarsak bilgisayarımızda local server ve veritabanı oluşturuyorlar.</p>
+    <p>- apache ve mysql oluşturuyor.</p>
+    <p>- bu uygulamalar olmadan php kodu yazamayız.</p>
+    <div class="splinter"></div>
+
+    <h1>PDF 2</h1>
+    <h2>OSI (Open Systems Interconnection) Nedir?</h2>
+    <p>- bilgisayar ağlarının nasıl iletişim kurduğunu açıklayan 7 katmanlı bir modeldir.</p>
+    <p>- 1) Uygulama (Application)</p>
+    <p>- 2) Sunum (Presentation): SSL</p>
+    <p>- 3) Oturum (Session): SQL</p>
+    <p>- 4) Taşıma (Transport): TCP</p>
+    <p>- 5) Ağ (Network): IP </p>
+    <p>- 6) Veri İletim (Data Link): Wi-Fi</p>
+    <p>- 7) Fiziksel (Physical): Kablo</p>
+    <div class="splinter"></div>
+
+    <h2>TCP Nedir?</h2>
+    <p>- TCP (Transmission Control Protocol), internet ve ağlarda veri iletimini sağlayan iletişim protokollerinden biridir.</p>
+    <p>- Veriyi küçük parçalara bölerek gönderir.</p>
+    <p>- Her parçanın doğrulamasını yapar.</p>
+    <p>- Eksik ya da hatalı gelen verileri tekrar gönderir.</p>
+    <p>- Güvenilir bir iletişim sağlar.</p>
+    <p>- İnternette en çok kullanılan protokollerden biridir.</p>
+    <div class="splinter"></div>
+
+    <h2>Peki TCP nerede çalışıyor? ve osi ile farkı nedir?</h2>
+    <p>- OSI, bir modeldir: Teorik olarak nasıl çalışması gerektiğini anlatır (7 katmanlı yapı).</p>
+    <p>- TCP, OSI modelin içinde çalışan gerçek bir protokoldür.</p>
+    <p>- TCP tam OSI'yin götünde oturarak (Taşıma (Transport) 4.katta) işini yapıyor</p>
+    <p>- TCP'nin işi nedir? verinin adam gibi gitmesini sağlar</p>
+    <div class="splinter"></div>
+
+    <h2>Peki OSI Neyin Modelidir? bu 7 kat neyi modelliyor ye içindeki TCP hangi verinin göndermesini sağlar?</h2>
+    <p>- Bilgisayar ağlarında, cihazlar arasında veri iletişiminin nasıl gerçekleşmesi gerektiğini anlatır</p>
+    <p>- örnek olarak OSI, bir siteye girdiğimde internetimden giden veriyi 7 katta kontrol eder bu 7 kattan 4. katında tcp var.</p>
+    <div class="splinter"></div>
+
+    <h2>HTTP Nedir?</h2>
+    <p>- Web sitelerini gezmemizi sağlayan bir iletişim protokolüdür.</p>
+    <p>- OSI'yin 1. katta (uygulama) oturur</p>
+    <p>- <span class="warn">OSI fiziksel değil metoddur.</span></p>
+    <div class="splinter"></div>
+
+    <h2>HTTPs ve SSL Nedir?</h2>
+    <p>- HTTPS HTTP'nın daha güvenli halidir.</p>
+    <p>- SSL Güvenliği veren kısmıdır.</p>
+    <p>- <span class="warn">SSL</span> = HTTP<span class="warn">s</span></p>
+    <p>- normalde HTTPteki veri okunabilir. yani bir sitede yazdığın şifreni, ben senin wifi hattından okuyabilirim.</p>
+    <p>- SSL köpek gibi o şifreyi <span class="warn">encrypt</span> yada şifrelendirir ve benim okuduğum şey saçmasapan bir hale gelir.</p>
+    <div class="splinter"></div>
+
+    <h2>HTML Nedir?</h2>
+    <p>- hyper text markup language</p>
+    <p>- bir websitenin structure yada iskeleti.</p>
+    <p>- frontend bir tasarlama dili.</p>
+    <p>- programlama dili değil çünkü program yapmıyor.</p>
+    <p>- html'in temel (default) yada asil tag'leri var ondan sonra istediğimiz tag'i ekleriz.</p>
+    <p>- default tagler şunlar: html, head, title, body.</p>
+    <p>- default tag'leri yazmazsan site çalışmaz.</p>
+    <div class="splinter"></div>
+    
+    <h1>PDF 3</h1>
+    <h2>CSS Nedir?</h2>
+    <p>- o HTML'in style ve şemasını yapan kısım.</p>
+    <p>- 3 şekilde yazılır: internal(html sayfasında), external(.css sayfasında ayrı) ve inline (aynı html taginde yazarız).</p>
+    <p>- css neler yapar? font size, renkleri modeli terzi, sayfa boyutu, kenarları, arka plan resmi,renki gibi değiştirir.</p>
+    <p>- hem renk, hem boyut, hem mesafeleri ve her şeyi değiştirir.</p>
+    <div class="end"></div>
+</body>
+</html>
